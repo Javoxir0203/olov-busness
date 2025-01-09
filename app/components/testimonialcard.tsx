@@ -1,5 +1,5 @@
 import Image from "next/image"
-import zohid from '@/public/zohid-ulmasbaev.webp'
+import zohid from '@/public/zohid-ulmasbaev.png'
 interface TestimonialCardProps {
 	date: string
 	name: string
