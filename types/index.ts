@@ -1,8 +1,8 @@
 import logo from '@/public/Logo copy.svg'
-import logo1 from '@/public/logo.jpeg'
 import logo2 from '@/public/logo.jpg'
 import logo3 from '@/public/logo.svg'
 import logo4 from '@/public/logo.webp'
+import logo5 from '@/public/logo copy 2.svg'
 
 const features = [
 	{
@@ -33,10 +33,10 @@ const features = [
 
 const partners = [
 	{ name: 'Beeline', logo: logo },
-	{ name: 'Turon Telecom', logo: logo1 },
 	{ name: 'EVOS', logo: logo2 },
 	{ name: 'MyTaxi', logo: logo3 },
 	{ name: 'MediaPark', logo: logo4 },
+	{ name: 'MediaPark', logo: logo5 },
 ]
 
 const faqItems = [

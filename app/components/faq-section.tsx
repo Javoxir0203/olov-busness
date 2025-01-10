@@ -13,7 +13,7 @@ interface FAQSectionProps {
 
 export function FAQSection({ items }: FAQSectionProps) {
 	return (
-		<Accordion type='single' collapsible className='w-full'>
+		<Accordion type='single' collapsible className='w-full text-black'>
 			{items.map((item, index) => (
 				<AccordionItem key={index} value={`item-${index}`}>
 					<AccordionTrigger className='text-left'>{item.question}</AccordionTrigger>

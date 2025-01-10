@@ -6,15 +6,15 @@ import { FAQSection } from "./faq-section"
 import { Button } from "@/components/ui/button"
 import { faqItems, partners } from "@/types"
 
-export default function HomePage() {
+ const HomePage =() => {
 	return (
 		<div className='min-h-screen'>
 			{/* Previous sections remain the same */}
 
 			{/* Partners Section */}
 			<section className='py-20 bg-gray-50'>
-				<div className='container mx-auto px-4'>
-					<h2 className='text-3xl font-bold text-center mb-12'>Bizga ishonishadi</h2>
+				<div className='container mx-auto h-80  px-4'>
+					<h2 className='text-3xl font-bold text-center mb-12 text-black'>Bizga ishonishadi</h2>
 					<div className='grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center'>
 						{partners.map((partner, index) => (
 							<Image key={index} src={partner.logo} alt={partner.name} className='h-12 object-contain grayscale' width={120} height={40} />
@@ -39,15 +39,15 @@ export default function HomePage() {
 			{/* FAQ Section */}
 			<section className='py-20 bg-gray-50'>
 				<div className='container mx-auto px-4'>
-					<h2 className='text-3xl font-bold text-center mb-12'>Ko`p beriladigan savollar</h2>
-					<div className='max-w-3xl mx-auto'>
+					<h2 className='text-3xl font-bold text-center mb-12 text-black'>Ko`p beriladigan savollar</h2>
+					<div className='max-w-6xl mx-auto'>
 						<FAQSection items={faqItems} />
 					</div>
 				</div>
 			</section>
 
 			{/* CTA Section */}
-			<section className='py-20 bg-teal-600 text-white'>
+			<section className='py-20 bg-orange-500 text-white'>
 				<div className='container mx-auto px-4 text-center'>
 					<h2 className='text-3xl font-bold mb-4'>Ulanishga tayyormisiz?</h2>
 					<p className='mb-8'>Sizga faqat telefon raqami kerak</p>
@@ -59,3 +59,4 @@ export default function HomePage() {
 		</div>
 	)
 }
+export default HomePage
